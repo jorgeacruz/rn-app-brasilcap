@@ -6,8 +6,12 @@ export default function Layout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: colors.blue[100],
-        tabBarInactiveTintColor: colors.black,
+        tabBarActiveTintColor: colors.yellow[100],
+        tabBarInactiveTintColor: colors.white[200],
+        tabBarStyle: {
+          backgroundColor: colors.black,
+          paddingTop: 10,
+        },
       }}
     >
       <Tabs.Screen
@@ -16,27 +20,17 @@ export default function Layout() {
           title: "Home",
           headerShown: false,
           tabBarShowLabel: true,
-          tabBarActiveTintColor: colors.blue[100],
-          tabBarStyle: {
-            backgroundColor: "#fff100",
-            paddingTop: 10,
-          },
           tabBarIcon: ({ color, size, focused }) => (
             <FontAwesome name={"home"} size={18} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="titulosCapital"
+        name="titulos"
         options={{
           title: "Titulos",
           headerShown: false,
           tabBarShowLabel: true,
-          tabBarActiveTintColor: colors.blue[100],
-          tabBarStyle: {
-            backgroundColor: "#fff100",
-            paddingTop: 10,
-          },
           tabBarIcon: ({ color, size, focused }) => (
             <FontAwesome name={"money"} size={18} color={color} />
           ),
@@ -48,11 +42,6 @@ export default function Layout() {
           title: "Perfil",
           headerShown: false,
           tabBarShowLabel: true,
-          tabBarActiveTintColor: colors.blue[100],
-          tabBarStyle: {
-            backgroundColor: "#fff100",
-            paddingTop: 10,
-          },
           tabBarIcon: ({ color, size, focused }) => (
             <FontAwesome name={"user"} size={18} color={color} />
           ),
@@ -64,11 +53,6 @@ export default function Layout() {
           title: "Blog",
           headerShown: false,
           tabBarShowLabel: true,
-          tabBarActiveTintColor: colors.blue[100],
-          tabBarStyle: {
-            backgroundColor: "#fff100",
-            paddingTop: 10,
-          },
           tabBarIcon: ({ color, size, focused }) => (
             <FontAwesome name={"newspaper-o"} size={18} color={color} />
           ),

@@ -23,7 +23,7 @@ export default function login() {
           />
           <TouchableOpacity
             style={styles.btnLogin}
-            onPress={() => router.navigate("/Home")}
+            onPress={() => router.navigate("/(tabs)")}
           >
             <Text style={styles.textBtn}>Entrar na minha Conta</Text>
           </TouchableOpacity>

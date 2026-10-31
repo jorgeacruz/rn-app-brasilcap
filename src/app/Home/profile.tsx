@@ -1,9 +1,11 @@
+import React from "react";
 import { Text, View } from "react-native";
 import { styles } from "./styles";
-export default function login() {
+
+export default function Profile() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+      <Text>Perfil</Text>
     </View>
   );
 }

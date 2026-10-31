@@ -6,4 +6,8 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  blogContainer: {
+    flex: 1,
+    justifyContent: "flex-start",
+  },
 });

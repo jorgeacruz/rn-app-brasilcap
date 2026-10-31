@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Explore() {
+export default function Titulos() {
   return (
     <View style={styles.container}>
-      <Text>Explore</Text>
+      <Text>ComponentName</Text>
     </View>
   );
 }
